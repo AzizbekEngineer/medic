@@ -1,0 +1,143 @@
+.product {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+
+    &__card {
+        background-color: white;
+        border: 1px solid #aaa9;
+        box-shadow: 1px 1px 10px #aaa7;
+
+        &__img {
+            padding: 20px 10px;
+
+            img {
+                height: 300px;
+                object-fit: cover;
+                width: 100%;
+                transition: .4s;
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+            }
+        }
+
+        &__info {
+            padding: 10px;
+
+            &-title {
+                font-family: Clear Sans;
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 24.34px;
+                text-align: left;
+                color: rgba(34, 34, 34, 1);
+                // padding-bottom: 10px;
+                display: -webkit-box;
+                line-clamp: 1;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
+            }
+
+            &-text {
+                padding: 15px 0;
+                font-family: Clear Sans;
+                font-size: 21px;
+                font-weight: 700;
+                line-height: 23.88px;
+                text-align: left;
+                color: rgba(0, 127, 0, 1);
+            }
+        }
+
+        &__info-btns {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+            button {
+                padding: 10px 20px;
+                border: 1px solid rgba(243, 118, 27, 1);
+                color: rgba(243, 118, 27, 1);
+                background-color: white;
+                transition: 0.6s;
+            }
+
+            button:hover {
+                background-color: rgba(243, 118, 27, 1);
+                color: white;
+            }
+        }
+    }
+
+    @media (max-width:1140px) {
+        &__cards {
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+        }
+    }
+
+    @media (max-width:750px) {
+        &__cards {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width:555px) {
+        &__card {
+            &__img {
+
+                img {
+                    height: 200px;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+
+            &__info {
+
+                &-title {
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+
+                &-text {
+                    padding: 8px 0;
+                    font-size: 18px;
+                }
+            }
+
+            &__info-btns {
+                gap: 15px;
+
+                button {
+                    padding: 8px 16px;
+                }
+            }
+        }
+    }
+
+    @media (max-width:440px) {
+        &__cards {
+            grid-template-columns: 1fr;
+        }
+
+        &__card {
+            &__img {
+
+                img {
+                    height: 260px;
+                }
+            }
+
+        }
+    }
+}

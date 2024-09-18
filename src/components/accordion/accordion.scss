@@ -1,0 +1,68 @@
+.accordion {
+    margin: 10px 0;
+
+    &__box {
+        padding: 30px;
+        background: white;
+    }
+
+    &__title {
+        padding: 10px 0;
+        font-size: 39px;
+        font-weight: 700;
+        line-height: 40px;
+        text-align: center;
+        color: black;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    &__name {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #007f00 !important;
+    }
+
+    @media (max-width: 1180px) {
+        &__title {
+            padding: 10px 0;
+            font-size: 28px;
+            line-height: 30px;
+        }
+
+        &__name {
+            font-size: 18px !important;
+            line-height: 24px;
+        }
+    }
+
+    @media (max-width: 1045px) {
+        &__items {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    @media (max-width: 500px) {
+        &__title {
+            padding: 10px 0;
+            font-size: 24px;
+            line-height: 30px;
+        }
+
+        &__box {
+            padding: 0px;
+            background: white;
+        }
+    }
+}

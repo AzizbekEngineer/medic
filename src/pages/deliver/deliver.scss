@@ -1,0 +1,222 @@
+.deliver {
+    &__title {
+        padding: 20px 0;
+        font-size: 39px;
+        font-weight: 700;
+        line-height: 40.05px;
+        color: #007F00;
+    }
+
+    &__box {
+        padding: 30px;
+        box-shadow: 0px 2px 4px 0px #00187036;
+        background: white;
+    }
+
+    &__box__top {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__items {
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 15px;
+    }
+
+    &__item {
+        padding: 15px;
+        border-right: 1px solid #222222;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 15px;
+
+        img {
+            width: 160px;
+            height: 90px;
+            object-fit: contain;
+        }
+    }
+
+    &__item:last-child {
+        border: none;
+    }
+
+    &__item__bottom {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+            width: 50px;
+            height: 50px;
+            object-fit: contain;
+        }
+    }
+
+    &__cards {
+        padding: 30px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+
+    &__card {
+        box-shadow: 0px 2px 4px 0px #00187036;
+        background: white;
+        padding: 20px;
+    }
+
+    &__card__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 15px 0;
+
+        h3 {
+            font-size: 21px;
+            font-weight: 700;
+            line-height: 23.88px;
+        }
+    }
+
+    &__comunicat {
+        padding: 20px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__left {
+        background: white;
+        padding: 50px;
+    }
+
+    &__name {
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 23.88px;
+    }
+
+    &__comunicat__desc {
+        padding: 20px 0;
+        max-width: 340px;
+    }
+
+    &__comunicat__item {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        a {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            gap: 8px;
+            font-weight: bold;
+
+            svg {
+                font-size: 20px;
+                color: #30489F;
+            }
+        }
+    }
+
+    &__right {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    @media (max-width:1250px) {
+        &__items {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        &__item {
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+        &__item:nth-child(2) {
+            border: none;
+        }
+    }
+
+    @media (max-width:1000px) {
+
+        &__cards,
+        &__comunicat {
+            grid-template-columns: 1fr;
+            gap: 15px;
+        }
+
+        &__right {
+            order: 1;
+        }
+
+        &__left {
+            order: 2;
+        }
+    }
+
+    @media (max-width:660px) {
+        &__title {
+            padding: 20px 0;
+            font-size: 28px;
+            line-height: 35px;
+        }
+
+        &__items {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 5px;
+        }
+
+        &__item {
+            border-bottom: 1px solid #dddddd00;
+            border-right: none;
+            // background: #ddd;
+        }
+    }
+
+    @media (max-width:500px) {
+        &__box {
+            padding: 15px 5px;
+        }
+
+        &__left {
+            background: white;
+            padding: 50px 15px 50px;
+        }
+
+        &__title {
+            padding: 20px 0;
+            font-size: 24px;
+            line-height: 38px;
+        }
+
+        &__comunicat__item {
+            gap: 10px;
+
+            a {
+                font-size: 14px;
+
+            }
+        }
+    }
+
+    @media (max-width:370px) {
+        &__card__top {
+            img {
+                display: none;
+            }
+        }
+    }
+}

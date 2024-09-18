@@ -1,0 +1,108 @@
+.swiper {
+
+
+    &__box {
+        margin: 10px 0;
+        padding: 15px;
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF),
+            linear-gradient(270deg, rgba(47, 163, 101, 0.07) 0%, rgba(21, 84, 92, 0.07) 100%);
+    }
+
+    &-pagination {
+        position: static !important;
+        margin-top: 20px;
+    }
+
+    &-pagination-bullet {
+        background: #007F00 !important;
+    }
+
+    &__title {
+        padding: 20px 0;
+        font-size: 39px;
+        font-weight: 700;
+        line-height: 52.73px;
+        text-align: center;
+        color: #007F00;
+    }
+
+    &__card {
+        background: white;
+        box-shadow: 0px 2px 4px 0px #00187036;
+        padding: 30px;
+        position: static !important;
+        margin-top: 15px;
+        border: 1px solid #00187036;
+        border-radius: 5px;
+    }
+
+    &__name {
+        font-size: 18px;
+        font-weight: 800;
+        line-height: 20.96px;
+    }
+
+    &__time {
+        padding: 10px 0;
+        display: inline-block;
+    }
+
+    &__stars {
+        display: flex;
+        gap: 5px;
+
+        svg {
+            color: #F3761B;
+        }
+    }
+
+    &__desc {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 24.34px;
+        padding: 10px 0;
+    }
+
+    &__btn {
+        background: transparent;
+        color: #F3761B;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-size: 18px;
+        font-weight: bold;
+        border: none;
+
+        svg {
+            color: #F3761B;
+        }
+    }
+
+    @media (max-width:1300px) {
+        &__card {
+            padding: 10px;
+        }
+    }
+
+    @media (max-width:600px) {
+        &__title {
+            font-size: 28px;
+            line-height: 35px;
+        }
+    }
+
+    @media (max-width:450px) {
+        &__title {
+            padding: 10px 0;
+            font-size: 22px;
+            line-height: 30px;
+        }
+    }
+
+    @media (max-width:350px) {
+        &__title {
+            font-size: 20px;
+            line-height: 30px;
+        }
+    }
+}

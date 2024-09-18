@@ -18,5 +18,28 @@ button {
   width: 100%;
   padding: 0 16px;
   margin: 0 auto;
-  // max-width: 1580px;
+  max-width: 1580px;
+}
+
+.containerMax {
+  width: 100%;
+  padding: 0 50px;
+  margin: 0 auto;
+  max-width: 1580px;
+}
+
+main {
+  background: #ECECEC;
+}
+
+@media (max-width:900px) {
+  .containerMax {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width:600px) {
+  .containerMax {
+    padding: 0 15px;
+  }
 }

@@ -3,7 +3,6 @@ import Hero from "../../components/hero/Hero";
 import Brand from "../../components/brand/Brand";
 import Person from "../../components/person/Person";
 import Service from "../../components/service/Service";
-import InfoDiagram from "../../components/info/infoDiagram";
 import Konsultatsiya from "../../components/konsultatsiya/Konsultatsiya";
 import AccordionUsage from "../../components/accordion/Accordion";
 import SwiperSec from "../../components/swiper/Swiper";
@@ -17,7 +16,6 @@ const Home = () => {
       <Brand />
       <Person />
       <Service />
-      {/* <InfoDiagram /> */}
       <ProductData />
       <Konsultatsiya />
       <AccordionUsage />

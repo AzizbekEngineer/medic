@@ -44,7 +44,7 @@ const Article = () => {
         <p>{el.desc}</p>
         <div className="article__card__bottom">
           <p>04.11.2020</p>
-          <button>читать </button>
+          <button>читать</button>
         </div>
       </div>
     </div>
